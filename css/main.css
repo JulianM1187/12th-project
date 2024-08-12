@@ -159,15 +159,23 @@ footer .copyright {
   margin: 20px 0;
 }
 
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
 .hero-area {
   display: flex;
   justify-content: center;
 }
 
+/* Aside */
+
 aside {
   display: flex;
   justify-content: center;
 }
+
+/* Features */
 
 .features {
   display: flex;
@@ -194,6 +202,8 @@ aside {
   margin: 0;
 }
 
+/* Reviews */
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -206,6 +216,10 @@ aside {
 .reviews h3 {
   width: 55%;
 }
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
 
 .mission {
   display: flex;
@@ -221,6 +235,10 @@ aside {
   margin: 0;
 }
 
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
 .faq {
   display: flex;
   justify-content: center;
@@ -235,11 +253,11 @@ aside {
 }
 
 .faq h2 {
-  margin: 40px;
+  margin-bottom: 40px;
 }
 
 .faq-content {
-  margin: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -340,6 +358,8 @@ aside {
     max-width: 640px;
     margin: 100px 0;
   }
+
+  /* Header */
 
   header {
     padding: 33px 0;
@@ -455,6 +475,62 @@ aside {
   .faq h2 {
     width: 100%;
   }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop Style here*/
+
+  /* General Style */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Header */
+
+  header {
+    padding: 15px 0;
+  }
+
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description, aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /****************** About Page **********************/
+
+  .mission h2, .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /****************** FAQ Page **********************/
+
+  .faq h2 {
+    width: 100%;
+  }
+
 
 }
 
